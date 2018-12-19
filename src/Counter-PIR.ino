@@ -353,6 +353,7 @@ void loop()
     {
       state = IDLE_STATE;
       pettingEnabled = true;                                            // Enable petting before going back into the loop
+      stayAwake = stay
       stayAwakeTimeStamp = millis();
     }
     else if (millis() > webhookTimeStamp + webhookWait) {               // If it takes too long - will need to reset
